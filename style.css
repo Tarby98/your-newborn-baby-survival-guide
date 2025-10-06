@@ -1,0 +1,393 @@
+/* STYLESHEET FOR BABY SURVIVAL GUIDE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://media.istockphoto.com/id/157988244/vector/seamless-blue-baby-background.jpg?s=612x612&w=0&k=20&c=nZ6723Ff9kmGK0VJWUV8AG5vpxUxvat81tAfCasrUAo=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+#menu-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  width: 250px;
+  height: 100%;
+  background-color: lightpink;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#sidebar.active {
+  left: 0; 
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar ul li {
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+}
+
+#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-top: 1rem;
+}
+
+#sidebar ul li a:hover {
+  color: red;
+}
+
+#home {
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 10%;
+  max-width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.intro h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem; 
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.image-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-layout img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  display: block;
+  border: 2px solid grey;
+}
+
+.image-layout img:hover {
+  transform: scale(1.1);
+}
+
+.caption, h3 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: lightblue;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h3 {
+  color: black;
+  font-size: 2rem;
+}
+
+h2 {
+  color: black;
+  font-size: 3rem;
+}
+
+#links {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: lightblue;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+  box-shadow:
+}
+  
+#links a {
+  display: inline-flex;
+  align-items: center; 
+  gap: 0.3em; 
+  text-decoration: none;
+  margin-bottom: 1rem;
+  color: inherit;
+  transition: transform 0.3s ease; 
+}
+
+#links a:hover {
+  transform: translateY(5px); 
+}
+
+#links img {
+  height: 2rem;
+  vertical-align: middle; 
+}
+
+.intro-2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+  /* FOOTER FLOWERS */
+
+.flower1, 
+.flower2, 
+.flower3,
+.flower4,
+.flower5,
+.flower6,
+.flower7,
+.flower8,
+.flower9,
+.flower10,
+.flower11,
+.flower12 {
+  position: absolute;
+  width: 40px;
+  opacity: 0;
+  transition: all 1.6s ease;
+  pointer-events: none;
+}
+
+.flower1 {
+  top: 20%;
+  left: 90%;
+}
+
+.flower2 {
+  top: 20%;
+  right: 19%;
+}
+
+.flower3 {
+  bottom: 55%;
+  left: 4%;
+}
+
+.flower4 {
+  bottom: 12%;
+  left: 23%;
+}
+
+.flower5 {
+  top: 60%;
+  right: 23%;
+}
+
+.flower6 {
+  top: 26%;
+  right: 3%;
+}
+
+.flower7 {
+  bottom: 12%;
+  left: 2%;
+}
+
+.flower8 {
+  bottom: 56%;
+  left: 12%;
+}
+
+.flower9 {
+  bottom: 64%;
+  left: 22%;
+}
+
+.flower10 {
+  bottom: 12%;
+  right: 14%;
+}
+
+.flower11 {
+  bottom: 19%;
+  left: 14%;
+}
+
+.flower12 {
+  bottom: 12%;
+  right: 7%;
+}
+
+footer p:hover ~ .flower1,
+footer p:hover ~ .flower2,
+footer p:hover ~ .flower3,
+footer p:hover ~ .flower4,
+footer p:hover ~ .flower5,
+footer p:hover ~ .flower6,
+footer p:hover ~ .flower7,
+footer p:hover ~ .flower8,
+footer p:hover ~ .flower9,
+footer p:hover ~ .flower10,
+footer p:hover ~ .flower11,
+footer p:hover ~ .flower12 {
+  opacity: 1;
+  transform: translateY(-10px) rotate(10deg);
+}
+
+footer img {
+  max-height: 1.5rem;
+  max-width: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 2rem; 
+  font-weight: bold;
+  padding: 2rem;
+  position: relative; 
+  background-color: white;
+  cursor: pointer;
+  margin-top: 2rem;
+  color: lightgray;
+  font-family: 'Playfair Display', serif;
+  min-height: 100px;
+  padding: 1rem;
+}
+
+.change {
+  color: gray;
+}
+
+  /* MEDIA FRIENDLY */
+
+@media (max-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* MOBILE LAYOUT */
+  
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+  
+   header {
+    padding-top: 60px; 
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff; 
+    height: 60px; 
+  }
+
+  .page-title {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 1.4rem; 
+  }
+
+  .my-story h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .my-story p {
+    margin-bottom: 1rem;
+  }
+  
+   .intro {
+  margin: 20px auto 0 auto; 
+  width: 90vw;
+  max-width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+  .image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.image-layout {
+  width: 80%;
+  margin: 0 auto; 
+  display: block; 
+}
+  
+  #links {
+    max-width: 80%;
+  }
+  
+}
+
